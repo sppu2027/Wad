@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Hyperlinks Demonstration</h2>
+<!-- a. Navigation to another page -->
+<h3>1. External Link</h3>
+<a href="https://www.google.com" target="_blank">Go to Google.com</a><br><br>
+<!-- b. Navigation within the page -->
+<h3>2. Internal Link (Anchor)</h3>
+<a href="#bottomSection">Jump to the Bottom Section</a>
+<!-- Large gap to force scrolling -->
+<div style="height: 1000px; background-color: #f0f0f0; margin: 20px 0; padding: 20px;">
+Scroll down or click the link above...
+</div>
+<!-- Target for the internal link -->
+<h3 id="bottomSection">Bottom Section</h3>
+<p>You have successfully jumped to the bottom of the page!</p>
+<a href="#">Back to top</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Validation</title>
+</head>
+<body>
+<h2>Registration Validation</h2>
+<form id="regForm">
+First Name: <input type="text" id="fName"><br><br>
+Last Name: <input type="text" id="lName"><br><br>
+Password: <input type="password" id="password"><br><br>
+Email: <input type="text" id="email"><br><br>
+Mobile: <input type="text" id="mobile"><br><br>
+Address: <textarea id="address"></textarea><br><br>
+<button type="button" onclick="validateForm()">Submit</button>
+</form>
+<p id="message" style="color:red;"></p>
+<!-- JavaScript block inside HTML. No external JS imports needed. -->
+<script>
+function validateForm() {
+const fName = document.getElementById("fName").value;
+const lName = document.getElementById("lName").value;
+const password = document.getElementById("password").value;
+const email = document.getElementById("email").value;
+const mobile = document.getElementById("mobile").value;
+const address = document.getElementById("address").value;
+const msg = document.getElementById("message");
+// Validations
+if (!/^[a-zA-Z]{6,}$/.test(fName)) return msg.innerText = "First name must contain only alphabets
+and be at least 6 characters.";
+if (lName.trim() === "") return msg.innerText = "Last name cannot be empty.";
+if (password.length < 6) return msg.innerText = "Password must not be less than 6 characters.";
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return msg.innerText = "Invalid email format
+(name@domain.com required).";
+if (!/^\d{10}$/.test(mobile)) return msg.innerText = "Mobile number must contain exactly 10 digits.";
+if (address.trim() === "") return msg.innerText = "Address cannot be empty.";
+msg.style.color = "green";
+msg.innerText = "Validation Successful!";
+}
+</script>
+</body>
+</html>

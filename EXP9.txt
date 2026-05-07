@@ -1,0 +1,12 @@
+# 1. Initialize a local git repository in your project folder
+git init
+# 2. Add all files to the staging area
+git add .
+# 3. Commit the changes
+git commit -m "Initial commit of Laboratory Practice-II code"
+# 4. Rename the default branch to 'main'
+git branch -M main
+# 5. Link your local repository to GitHub (replace URL with your actual GitHub repo URL)
+git remote add origin https://github.com/YourUsername/YourRepositoryName.git
+# 6. Push the code to GitHub
+git push -u origin main

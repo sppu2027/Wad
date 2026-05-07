@@ -1,0 +1,37 @@
+File: home.html
+HTML
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Welcome to the College Website</h1>
+<a href="login.html">Login Page</a> | <a href="register.html">Registration Page</a>
+</body>
+</html>
+File: login.html
+HTML
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Login</h2>
+<form>
+Username: <input type="text"><br><br>
+Password: <input type="password"><br><br>
+<button type="button">Login</button>
+</form>
+<a href="home.html">Back to Home</a>
+</body>
+</html>
+File: register.html
+HTML
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Registration</h2>
+<form>
+Name: <input type="text"><br><br>
+Email: <input type="email"><br><br>
+<button type="button">Register</button>
+</form>
+<a href="home.html">Back to Home</a>
+</body>
+</html>

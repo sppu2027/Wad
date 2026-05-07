@@ -1,0 +1,33 @@
+File 1 (External CSS): styles.css
+CSS
+/* External CSS File */
+.external-style {
+background-color: lightblue;
+padding: 10px;
+border: 2px solid blue;
+}
+File 2 (HTML File): css_demo.html
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Demonstration</title>
+<!-- Import External CSS -->
+<link rel="stylesheet" href="styles.css">
+<!-- Internal CSS -->
+<style>
+.internal-style {
+color: darkgreen;
+font-style: italic;
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+<h2>CSS Styles Demonstration</h2>
+<!-- Inline CSS -->
+<p style="color: red; font-weight: bold;">1. This paragraph uses INLINE CSS.</p>
+<p class="internal-style">2. This paragraph uses INTERNAL CSS.</p>
+<p class="external-style">3. This paragraph uses EXTERNAL CSS (from styles.css).</p>
+</body>
+</html>

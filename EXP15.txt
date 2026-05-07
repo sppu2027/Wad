@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table { border-collapse: collapse; width: 80%; margin: auto; text-align: center; font-family: sans-serif;
+}
+th, td { border: 2px solid black; padding: 15px; }
+th { background-color: #4CAF50; color: white; }
+.break { background-color: #f1f1f1; font-weight: bold; }
+</style>
+</head>
+<body>
+<h2 style="text-align:center;">College Weekly Time-Table</h2>
+<table>
+<tr>
+<th>Time</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+</tr>
+<tr>
+<td>09:00 - 10:00</td>
+<td>Web App Dev</td>
+<td>Database Mgt</td>
+<td>Software Eng</td>
+<td>Computer N/W</td>
+<td>Web App Dev</td>
+</tr>
+<tr>
+<td>10:00 - 11:00</td>
+<td>Software Eng</td>
+<td>Computer N/W</td>
+<td>Database Mgt</td>
+<td>Web App Dev</td>
+<td>Database Mgt</td>
+</tr>
+<tr>
+<td colspan="6" class="break">11:00 - 11:30 : SHORT BREAK</td>
+</tr>
+<tr>
+<td>11:30 - 01:30</td>
+<td colspan="2">Web App Dev Lab (Batch A)</td>
+<td colspan="2">Database Lab (Batch B)</td>
+<td>Project Work</td>
+</tr>
+</table>
+</body>
+</html>

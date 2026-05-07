@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>User Registration Form</h2>
+<form>
+1. Name: <input type="text"><br><br>
+2. Password: <input type="password"><br><br>
+3. E-mail: <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+4. Phone:
+<select>
+<option value="+91">+91 (India)</option>
+<option value="+1">+1 (USA)</option>
+</select>
+<input type="text" maxlength="10" pattern="\d{10}" title="10 digits only"><br><br>
+5. Sex:
+<input type="radio" name="sex" value="Male"> Male
+<input type="radio" name="sex" value="Female"> Female<br><br>
+6. Date of Birth:
+<select><option>01</option><option>02</option><option>03</option></select>
+<select><option>Jan</option><option>Feb</option><option>Mar</option></select>
+<select><option>2000</option><option>2001</option><option>2002</option></select><br><br>
+7. Languages known:
+<input type="checkbox" value="English"> English
+<input type="checkbox" value="Marathi"> Marathi
+<input type="checkbox" value="Hindi"> Hindi
+<input type="checkbox" value="Tamil"> Tamil<br><br>
+8. Address:<br>
+<textarea rows="4" cols="30"></textarea><br><br>
+<button type="submit">Submit Form</button>
+</form>
+</body>
+</html>

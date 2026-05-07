@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>User Login</h2>
+<form id="loginForm" onsubmit="return validateBasicLogin()">
+Username: <input type="text" id="usr"><br><br>
+Password: <input type="password" id="pwd"><br><br>
+<input type="submit" value="Login">
+</form>
+<script>
+function validateBasicLogin() {
+let u = document.getElementById("usr").value;
+let p = document.getElementById("pwd").value;
+if (u === "" || p === "") {
+alert("Username and Password are required!");
+return false; // Prevents form submission
+}
+alert("Logging in...");
+return true;
+}
+</script>
+</body>
+</html>

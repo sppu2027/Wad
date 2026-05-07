@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Quick Registration</h2>
+<form onsubmit="return validateReg()">
+Email: <input type="text" id="emailAdd"><br><br>
+Age: <input type="number" id="age"><br><br>
+<input type="submit" value="Register">
+</form>
+<script>
+function validateReg() {
+let email = document.getElementById("emailAdd").value;
+let age = document.getElementById("age").value;
+if (email.indexOf("@") === -1) {
+alert("Please enter a valid email containing '@'.");
+return false;
+}
+if (age < 18) {
+alert("You must be 18 or older to register.");
+return false;
+}
+alert("Form is perfectly valid!");
+return true;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Login Page Validation</h2>
+<form id="loginForm">
+User Name: <input type="text" id="username"><br><small>Min 8 chars, 1 Uppercase, 1
+lowercase, 1 number, 1 special char</small><br><br>
+Password: <input type="password" id="password"><br><small>Min 8 chars, 1 Uppercase, 1
+special char</small><br><br>
+<button type="button" onclick="validateLogin()">Login</button>
+</form>
+<script>
+function validateLogin() {
+const user = document.getElementById("username").value;
+const pass = document.getElementById("password").value;
+const userPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+const passPattern = /^(?=.*[A-Z])(?=.*[\W_]).{8,}$/;
+if (!userPattern.test(user)) {
+alert("Invalid User Name format!");
+} else if (!passPattern.test(pass)) {
+alert("Invalid Password format!");
+} else {
+alert("Login credentials are valid!");
+}
+}
+</script>
+</body>
+</html>

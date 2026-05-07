@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>AJAX Implementation</h2>
+<button onclick="loadData()">Fetch Data using AJAX</button>
+<div id="result"></div>
+<script>
+function loadData() {
+// Create XMLHttpRequest Object
+const xhttp = new XMLHttpRequest();
+// Define callback function
+xhttp.onload = function() {
+if (this.status === 200) {
+document.getElementById("result").innerHTML =
+"<strong>Data Received:</strong><br>" + this.responseText;
+}
+}
+// Send GET request to a public test API
+xhttp.open("GET", "https://jsonplaceholder.typicode.com/users/1", true);
+xhttp.send();
+}
+</script>
+</body>
+</html>
